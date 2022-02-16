@@ -8,7 +8,7 @@ class Settings(BaseSettings):
     database_hostname: str
     secret_key: str
     algorithm: str
-    access_token_expire_minutes: str
+    access_token_expire_minutes: int
 
     class Config:
         env_file = "app/.env"
